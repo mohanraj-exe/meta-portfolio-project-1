@@ -1,0 +1,171 @@
+html{
+    font-size: 1rem;
+    font-family: "Playfair Display", serif;
+}
+
+body{
+    background-color: rgb(240, 240, 240);
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+h2{
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: normal;
+}
+
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 8.5em;
+    width: 12.5em;
+}
+
+@keyframes logo-hover {
+    from{
+        transform: skew(0deg,0deg);
+    }
+    to{
+        transform: skew(-3deg, -3deg);
+        box-shadow: 0.15625em 0.15625em 0.078125em 0.078125em cyan;
+    }
+}
+
+header > img:hover{
+    animation: logo-hover 1s 1 normal;
+    cursor: pointer;
+}
+
+nav {
+    background-color: #d0604c;
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 1.5em;
+}
+
+nav ul{
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+}
+
+nav li{
+    display: inline-block;
+    margin-right: 0.65em;
+}
+
+ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 400;
+    font-style: bold;
+}
+
+ul a:link{
+    color: white;
+}
+
+ul a:visited{
+    color: #f4e5d6;
+}
+
+ul a:hover{
+    color: aqua;
+}
+
+ul a:active{
+    color: yellow;
+}
+
+img[src*="banner"]{
+    border-radius: 1em;
+}
+
+img[src*="banner"], img[src*="img"] {
+    display: block;
+    max-width: 100%;
+}
+
+#section-two{
+    margin: 1em 0;
+}
+
+#section-two article{
+    background-color: #f4e5d6;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 0.0625em solid #d0604c;
+    border-radius: 1.5em;
+}
+
+#section-two article:hover{
+    box-shadow: 0.15625em 0.15625em 0.078125em 0.078125em black;
+}
+
+footer{
+    display: flex;
+    background-color: #f4e5d6;
+    padding: 0 0.65em;
+    border-radius: 1em;
+    border: 0.0625em solid #d0604c;
+    justify-content: space-between;
+}
+
+footer div{
+    align-self: baseline;
+}
+
+img[src="Artboard 22.png"] {
+    /* display: block; */
+    width: 6.75em;
+    height: 1.01375em;
+}
+
+span{
+    font-weight: 700;
+    font-style: italic;
+}
+
+p ~ ul{
+    color: #d0604c;
+    font-weight: 700;
+    font-size: 1.1325em;
+}
+
+.appointment{
+    font-weight: 700;
+    font-size: 1.1325em;
+}
+
+/* responsive design - for larger screen devices above 992px*/
+
+@media only screen and (min-width: 992px) {
+    
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    img[src*="banner"]{
+        height: 90vh;
+        min-width: 100%;
+    }
+
+    #section-two{
+        display: flex;
+    }
+    
+    #section-two article{
+        flex: 1;
+    }
+
+    #contact-us {
+        margin: 0 1em;
+    }
+}
